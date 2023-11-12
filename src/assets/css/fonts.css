@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'LotaGrotesque';
+    src: url('../fonts/LotaGrotesque/Lota-Grotesque-Regular.otf');
+}
+@font-face {
+    font-family: 'LotaGrotesque-smbold';
+    src: url('../fonts/LotaGrotesque/Lota-Grotesque-SemiBold.otf');
+}
+@font-face {
+    font-family: 'LotaGrotesque-bold';
+    src: url('../fonts/LotaGrotesque/Lota-Grotesque-Bold.otf');
+}
+@font-face {
+    font-family: 'LotaGrotesque-light';
+    src: url('../fonts/LotaGrotesque/Lota-Grotesque-Light.otf');
+}
+@font-face {
+    font-family: 'LotaGrotesque-xlight';
+    src: url('../fonts/LotaGrotesque/Lota-Grotesque-Extra-Light.otf');
+}
+@font-face {
+    font-family: 'LotaGrotesque-thin';
+    src: url('../fonts/LotaGrotesque/Lota-Grotesque-Thin.otf');
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('../fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf');
+}
+@font-face {
+    font-family: 'SpaceGrotesk-medium';
+    src: url('../fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf');
+}

@@ -1,11 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
+// Layouts
+import Externals from '../Externals.vue'
+
+// Externl Views
+import Home from '../views/Home.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    component: Externals,
+    children: [
+      {
+        path: 'home',
+        alias: '',
+        name: 'Home',
+        component: Home
+      },
+    ]
   },
   {
     path: '/about',
