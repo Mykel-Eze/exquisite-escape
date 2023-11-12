@@ -21,12 +21,13 @@ export default {
 
 <style scoped>
 #partners-block {
-    margin: 50px auto;
+    margin: 50px 0;
 }
 .partners-wrapper {
     max-width: 834px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
 }
 </style>

@@ -17,7 +17,7 @@
   }
   div#main-contents-wrapper {
     padding-top: 90px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
   @media(max-width: 600px) {
     div#main-contents-wrapper {
