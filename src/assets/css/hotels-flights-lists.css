@@ -1,4 +1,7 @@
 section#domestic-flight-list {
+    padding: 10px 0;
+}
+.dfl-wrapper {
     border-radius: 10px;
     background: #EDEDED;
     padding: 20px 30px;

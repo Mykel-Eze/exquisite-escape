@@ -1,0 +1,141 @@
+/*---=== Trending Flights-Section Style ===---*/
+section#trending-flights {
+    padding: 50px 0 30px;
+}
+.section-header {
+    margin-bottom: 40px;
+}
+h2.section-title {
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -1.28px;
+    margin: 0;
+}
+p.section-title-desc {
+    color: #0A0A0A;
+    font-size: 24px;
+    letter-spacing: -0.48px;
+}
+.flight-deals-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px auto;
+}
+.flight-deals-card {
+    padding: 50px 30px;
+    color: var(--sec-color);
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #f9f9f9;
+}
+.flight-deals-card > * {
+    position: relative;
+    z-index: 1;
+}
+.flight-deals-card:nth-child(even) {
+    background-color: rgba(102, 202, 196, 0.4);
+    color: #0A0A0A;
+}
+.flight-deals-card:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(229, 246, 245, 0.05);
+}
+.city-short-name {
+    color: #141414;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.64px;
+}
+.airline {
+    color: #141414;
+}
+.airline img {
+    width: 30px;
+}
+a.flight-price-btn {
+    height: 44px;
+    width: 300px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(63, 46, 177, 0.20);
+    background: #141414;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: white;
+    font-size: 14px;
+}
+.flight-deals-card:nth-child(even) a.flight-price-btn {
+    border: 1px solid #66CAC4;
+    background: #00A79D;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.flight-deals-card:nth-child(even) svg.flight-icon path:first-child {
+    fill: #66CAC4;
+}
+.flight-deals-card:nth-child(even) svg.flight-icon path:last-child {
+    fill: #00A79D;
+}
+/*---=== end of Trending Flights-Section Style ===---*/
+
+/*---=== Book-Now-Explore Style ===---*/
+section#book-now-explore {
+    padding: 50px 0;
+}
+.bne-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+.bne-block {
+    position: relative;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding-top: 75%;
+}
+.bne-block.bne-book-now {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(../images/guy-in-uber.jpeg), lightgray 50% / cover no-repeat;
+}
+.bne-block.bne-explore {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(../images/camel.jpeg), lightgray 50% / cover no-repeat;
+}
+.bne-block-txt {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-60%);
+    font-size: 44px;
+    font-family: var(--font-bold);
+    line-height: 52px;
+    letter-spacing: -0.8px;
+}
+.bne-block-txt a {
+    font-size: 14px;
+    width: 240px;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #66CAC4;
+    background: white;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: var(--sec-color);
+    justify-content: center;
+    margin-top: 22px;
+}
+
+@media(max-width: 992px) {
+    .bne-block-txt {
+        font-size: 34px;
+    }
+}
+
+@media(max-width: 600px) {
+    .bne-wrapper {
+        grid-template-columns: 100%;
+    }
+}
+/*---=== end of Book-Now-Explore Style ===---*/

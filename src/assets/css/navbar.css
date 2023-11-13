@@ -9,8 +9,10 @@ nav.main-nav{
     font-family: var(--font-light);
     top: 0;
 }
-.container {
-    width: 70%;
+.main-nav .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 nav ul a:hover {
     background-color: transparent;
