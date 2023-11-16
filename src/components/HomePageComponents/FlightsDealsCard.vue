@@ -22,7 +22,7 @@
       <div class="flight-price-btn-wrapper">
         <a href="#" class="flight-price-btn flex-div gap-2 justify-center hover-scale">
           <span class="flight-price">{{ data.price }}</span>
-          <img src="../assets/images/lock.svg" alt="lock" class="lock-icon">
+          <img src="../../assets/images/lock.svg" alt="lock" class="lock-icon">
         </a>
       </div>
     </div>
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import Svgicons from "./icons/AllIcons.vue";
+import Svgicons from "@/components/icons/AllIcons.vue";
 export default {
   name: "FlightDealsCard",
   components: {

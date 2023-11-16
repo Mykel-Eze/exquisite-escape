@@ -106,7 +106,7 @@ export default {
 }
 </script>
 
-<style scoped src="..\assets\css\hotels-flights-lists.css"></style>
+<style scoped src="@\assets\css\hotels-flights-lists.css"></style>
 
 <style>
     section#domestic-flight-list ul.tabs .indicator {

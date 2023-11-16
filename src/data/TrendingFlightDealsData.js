@@ -13,7 +13,7 @@ export const TrendingFlightDealsData = [
         },
         airline: {
             name: 'Qatar Airways',
-            logo: '/qatar-airways-icon.png',
+            logo: '/icons/qatar-airways-icon.png',
         },
         price: '₦ 203,000.00',
     },
@@ -31,7 +31,7 @@ export const TrendingFlightDealsData = [
         },
         airline: {
             name: 'Qatar Airways',
-            logo: '/qatar-airways-icon.png',
+            logo: '/icons/qatar-airways-icon.png',
         },
         price: '₦ 2,003,000.00',
     },
@@ -49,7 +49,7 @@ export const TrendingFlightDealsData = [
         },
         airline: {
             name: 'RwandAir',
-            logo: '/rwandair-icon.png',
+            logo: '/icons/rwandair-icon.png',
         },
         price: '₦ 2,003,000.00',
     },
@@ -67,7 +67,7 @@ export const TrendingFlightDealsData = [
         },
         airline: {
             name: 'Qatar Airways',
-            logo: '/qatar-airways-icon.png',
+            logo: '/icons/qatar-airways-icon.png',
         },
         price: '₦ 201,000.00',
     },
@@ -85,7 +85,7 @@ export const TrendingFlightDealsData = [
         },
         airline: {
             name: 'RwandAir',
-            logo: '/rwandair-icon.png',
+            logo: '/icons/rwandair-icon.png',
         },
         price: '₦ 203,000.00',
     },
@@ -103,7 +103,7 @@ export const TrendingFlightDealsData = [
         },
         airline: {
             name: 'RwandAir',
-            logo: '/rwandair-icon.png',
+            logo: '/icons/rwandair-icon.png',
         },
         price: '₦ 1,103,000.00',
     },
