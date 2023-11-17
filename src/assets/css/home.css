@@ -27,6 +27,7 @@ p.section-title-desc {
     font-size: 18px;
     line-height: 26px;
     background-color: #f9f9f9;
+    position: relative;
 }
 .flight-deals-card > * {
     position: relative;

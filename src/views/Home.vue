@@ -3,6 +3,7 @@
     <section id="home"></section>
 
     <!--=== Trip-Inspiration Section ===-->
+    <TripInspiration />
     <!--=== end of Trip-Inspiration Section ===-->
 
     <!--=== Trending-Flights Section ===-->
@@ -23,13 +24,15 @@
 import HotelFlightLists from '@/components/HomePageComponents/HotelFlightLists.vue'
 import BookNowExplore from '@/components/HomePageComponents/BookNowExplore.vue'
 import TrendingFlights from '@/components/HomePageComponents/TrendingFlights.vue'
+import TripInspiration from '@/components/HomePageComponents/TripInspiration.vue'
 
 export default {
   name: 'HomeView',
   components: {
     HotelFlightLists,
     BookNowExplore,
-    TrendingFlights
+    TrendingFlights,
+    TripInspiration
   },
 }
 </script>
