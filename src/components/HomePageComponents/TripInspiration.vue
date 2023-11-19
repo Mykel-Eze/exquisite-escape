@@ -63,6 +63,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { Navigation } from 'swiper/modules';
+
 import { TripData } from '@/data/TripData.js';
 
 export default {

@@ -1,6 +1,8 @@
 <template>
   <div id="home-view">
-    <section id="home"></section>
+    <!--=== Landing Section ===-->
+    <LandingSection />
+    <!--=== end of Landing Section ===-->
 
     <!--=== Trip-Inspiration Section ===-->
     <TripInspiration />
@@ -21,18 +23,20 @@
 </template>
 
 <script>
-import HotelFlightLists from '@/components/HomePageComponents/HotelFlightLists.vue'
-import BookNowExplore from '@/components/HomePageComponents/BookNowExplore.vue'
-import TrendingFlights from '@/components/HomePageComponents/TrendingFlights.vue'
+import LandingSection from '@/components/HomePageComponents/LandingSection.vue'
 import TripInspiration from '@/components/HomePageComponents/TripInspiration.vue'
+import TrendingFlights from '@/components/HomePageComponents/TrendingFlights.vue'
+import BookNowExplore from '@/components/HomePageComponents/BookNowExplore.vue'
+import HotelFlightLists from '@/components/HomePageComponents/HotelFlightLists.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HotelFlightLists,
-    BookNowExplore,
+    LandingSection,
+    TripInspiration,
     TrendingFlights,
-    TripInspiration
+    BookNowExplore,
+    HotelFlightLists, 
   },
 }
 </script>

@@ -1,3 +1,146 @@
+/*---=== Landing-Section Style ===---*/
+section#landing-section {
+    min-height: 500px;
+    height: calc(100vh - 90px);
+}
+.glossy-bg {
+    background-image: url(../images/glossy-bg.svg);
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    fill: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0.06%, rgba(255, 255, 255, 0.06) 99.84%);
+    stroke-width: 1px;
+    stroke: #EDEDED;
+    backdrop-filter: blur(12px);
+    color: white;
+    padding: 34px;
+    max-width: 1250px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.landing-section-title-desc {
+    font-size: 18px;
+}
+.landing-section-title {
+    margin: 5px 0 0;
+    font-size: 64px;
+    font-weight: 400;
+    font-family: var(--font);
+    letter-spacing: -1.28px;
+}
+.tab-buttons {
+    margin-bottom: 40px;
+}
+.tab-buttons button {
+    font-family: var(--font2);
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0 20px;
+    border-radius: 10px;
+    height: 50px;
+}
+.tab-buttons button.active {
+    border-bottom: 1px solid #B2E5E2;
+    background: var(--pry-color);
+}
+/* .tab-form-wrapper form {} */
+.tab-form-wrapper .input-field-wrapper {
+    border-radius: 20px 0px 0px 20px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 20px 5px 20px 20px;
+}
+.tab-form-btn-wrapper {
+    padding: 0 20px 20px 10px;
+}
+button.tab-form-btn {
+    border-radius: 10px;
+    border: 1px solid #66CAC4;
+    background: var(--pry-color);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    height: 85px;
+    width: 258px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+button.tab-form-btn img {
+    width: 18px;
+}
+.input-white-wrapper {
+    border-radius: 10px;
+    border: 1px solid #B2E5E2;
+    background: #ffffff;
+    width: 216px;
+    height: 85px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.input-white-wrapper.flex-row {
+    flex-direction: row;
+}
+.input-white-wrapper.long-inp-wrapper {
+    width: 442px;
+}
+.input-white-wrapper.medium-inp-wrapper {
+    width: 330px;
+}
+input.ls-inp-field {
+    height: 31px !important;
+    border: none !important;
+    font-size: 24px !important;
+    color: var(--sec-color) !important;
+    margin-bottom: 0 !important;
+    box-shadow: none !important;
+}
+img.transfer-arrow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.datepicker-table {
+    color: var(--sec-color);
+}
+.select-field-wrapper svg.caret {
+    display: none;
+}
+.select-field-wrapper svg.caret-icon {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    z-index: 1;
+}
+.select-field-wrapper input.select-dropdown {
+    box-sizing: border-box !important;
+    border-radius: 10px !important;
+    border: 1px solid #FFF !important;
+    background: rgba(229, 246, 245, 0.20) !important;
+    height: 50px !important;
+    width: 160px !important;
+    padding: 0px 20px !important;
+}
+.purpose-radio-wrapper {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 10px 15px 10px 12px;
+    height: 50px;
+}
+.purpose-wrapper [type="radio"]:not(:checked)+span:before, 
+.purpose-wrapper [type="radio"]:not(:checked)+span:after,
+.purpose-wrapper [type="radio"]:checked+span:after, 
+.purpose-wrapper [type="radio"].with-gap:checked+span:before {
+    background: white;
+}
+.purpose-wrapper [type="radio"]:not(:checked)+span, 
+.purpose-wrapper [type="radio"]:checked+span {
+    padding-left: 30px;
+}
+/*---=== end of Landing-Section Style ===---*/
+
 /*---=== Trending Flights-Section Style ===---*/
 section#trending-flights {
     padding: 50px 0 30px;
@@ -6,7 +149,7 @@ section#trending-flights {
     margin-bottom: 40px;
 }
 h2.section-title {
-    font-size: 64px;
+    font-size: 64px; 
     line-height: 77px;
     letter-spacing: -1.28px;
     margin: 0;
