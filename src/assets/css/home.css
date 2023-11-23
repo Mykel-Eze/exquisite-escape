@@ -4,12 +4,12 @@ section#landing-section {
     height: calc(100vh - 90px);
 }
 .glossy-bg {
-    background-image: url(../images/glossy-bg.svg);
+    background-image: url(../images/translucent-bg.png);
     background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
-    fill: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0.06%, rgba(255, 255, 255, 0.06) 99.84%);
+    background-size: 100% 100%;
+    /* fill: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0.06%, rgba(255, 255, 255, 0.06) 99.84%);
     stroke-width: 1px;
-    stroke: #EDEDED;
+    stroke: #EDEDED;*/
     backdrop-filter: blur(12px);
     color: white;
     padding: 34px;
