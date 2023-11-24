@@ -1,7 +1,7 @@
 <template>
     <section id="landing-section" :style="{ backgroundImage: `url(${backgroundImage})` }">
         <div class="row full-height">
-            <div class="container full-height">
+            <div class="container glossy-bg-wrapper full-height">
                 <div class="glossy-bg">
                     <div class="landing-section-header">
                         <div class="landing-section-title-desc">Explore, Journey, Discover, Adventure</div>

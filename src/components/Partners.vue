@@ -30,4 +30,14 @@ export default {
     justify-content: space-between;
     margin: auto;
 }
+
+@media (max-width: 992px) {
+    .partners-wrapper {
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {}
 </style>

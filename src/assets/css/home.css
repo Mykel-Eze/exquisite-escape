@@ -139,6 +139,72 @@ img.transfer-arrow {
 .purpose-wrapper [type="radio"]:checked+span {
     padding-left: 30px;
 }
+
+@media(max-width: 992px) {
+    section#landing-section {
+        height: auto;
+        padding: 70px 0;
+    }
+    .glossy-bg {
+        background-image: url(../images/translucent-bg-mobile.png);
+        top: auto;
+        transform: none;
+    }
+    .tab-buttons.flex-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tab-form-wrapper .input-field-wrapper {
+        border-radius: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+    form.search-inputs {
+        flex-direction: column;
+        gap: 30px;
+    }
+    form.search-inputs .grid-sm-break {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .input-white-wrapper, button.tab-form-btn, .tab-form-btn-wrapper {
+        width: 100%;
+    }
+    .input-white-wrapper.medium-inp-wrapper, .input-white-wrapper.long-inp-wrapper {
+        width: 100%;
+    }
+    .purpose-wrapper.flex-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width: 600px) {
+    .glossy-bg-wrapper.container {
+        width: 100%;
+    }
+    .landing-section-title {
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+    .tab-buttons button {
+        justify-content: center;
+        height: auto;
+        padding: 10px 20px;
+    }
+    .select-field-wrapper input.select-dropdown {
+        width: 100% !important;
+    }
+    form.search-inputs .grid-sm-break > .flex-div.gap-3 {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .input-white-wrapper {
+        height: 75px;
+        padding: 12px 20px;
+    }
+}
 /*---=== end of Landing-Section Style ===---*/
 
 /*---=== Trending Flights-Section Style ===---*/
@@ -202,9 +268,13 @@ p.section-title-desc {
 .airline img {
     width: 30px;
 }
+.flight-price-btn-wrapper {
+    width: 100%;
+    max-width: 300px;
+}
 a.flight-price-btn {
     height: 44px;
-    width: 300px;
+    width: 100%;
     padding: 10px 16px;
     border-radius: 10px;
     border: 1px solid rgba(63, 46, 177, 0.20);
@@ -223,6 +293,22 @@ a.flight-price-btn {
 }
 .flight-deals-card:nth-child(even) svg.flight-icon path:last-child {
     fill: #00A79D;
+}
+
+@media(max-width: 992px) {
+    .flight-deals-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+    .flight-deals-wrapper {
+        grid-template-columns: 100%;
+    }
+    h2.section-title {
+        font-size: 52px;
+        line-height: 54px;
+    }
 }
 /*---=== end of Trending Flights-Section Style ===---*/
 

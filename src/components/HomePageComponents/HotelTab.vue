@@ -14,7 +14,7 @@
                     </label>
                 </div>
             </div>
-            <div class="flex-div gap-3">
+            <div class="flex-div gap-3 grid-sm-break">
                 <InputField 
                     label="Going to?"
                     placeholder="Destination, city or hotel name"

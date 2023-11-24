@@ -18,7 +18,17 @@
                 </div>
                 <div class="rel">
                     <swiper
-                        :slidesPerView="4"
+                        :breakpoints="{
+                            640: {
+                                slidesPerView: 2,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                            },
+                            1440: {
+                                slidesPerView: 4,
+                            },
+                        }"
                         :spaceBetween="30"
                         :rewind="true"
                         :navigation="{ nextEl: '.custom-next', prevEl: '.custom-prev' }"
@@ -86,4 +96,3 @@ export default {
 </script>
 
 <style scoped src="@/assets/css/trip-inspiration.css"></style>
-

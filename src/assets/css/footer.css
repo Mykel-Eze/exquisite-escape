@@ -33,3 +33,18 @@ ul.footer-block-links li a {
     color: var(--sec-color);
     text-decoration: underline;
 }
+
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .footer-note-wrapper {
+        padding-top: 35px;
+        margin-top: 60px;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {}
