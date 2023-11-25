@@ -7,6 +7,14 @@
                     <img src="../assets/images/exquisite-escape-logo.png" alt="Exquisite Escape" class="logo">
                 </router-link>
 
+                <a rel="noopener"
+                    href="#"
+                    data-target="slide-out"
+                    class="sidenav-trigger sec-color right"
+                >
+                  <SvgIcons icon="menu" />
+                </a>
+
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
                         <router-link to="/" class="" @click="scrollToTop()">Book Flight</router-link>
@@ -98,8 +106,14 @@
 
 <script>
 import M from "materialize-css";
+
+import SvgIcons from "./icons/AllIcons.vue";
+
 export default {
   name: "NavbarComponent",
+  components: {
+    SvgIcons,
+  },
   mounted() {
     document.addEventListener('DOMContentLoaded', function() {
       var elemsSidenav = document.querySelectorAll(".sidenav");
