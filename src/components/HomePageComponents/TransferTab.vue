@@ -19,34 +19,36 @@
                     label=""
                 />
             </div>
-            <div class="flex-div gap-3 grid-sm-break">
-                <div class="flex-div gap-3 rel">
+            <div class="flex flex-cols gap-3">
+                <div class="flex-div gap-3 grid-sm-break">
+                    <div class="flex-div gap-3 rel arrival-depature-inputs">
+                        <InputField 
+                            label="From where?"
+                            placeholder="Terminal, Hotel"
+                            id="depature"
+                            type="text"
+                            inputClass="ls-inp-field"
+                            divClass="input-white-wrapper medium-inp-wrapper"
+                        />
+                        <img src="../../assets/images/transfer-arrow.svg" alt="transfer-arrow" class="transfer-arrow">
+                        <InputField 
+                            label="To where?"
+                            placeholder="Terminal, Hotel"
+                            id="destination"
+                            type="text"
+                            inputClass="ls-inp-field"
+                            divClass="input-white-wrapper medium-inp-wrapper"
+                        />
+                    </div>
                     <InputField 
-                        label="From where?"
-                        placeholder="Terminal, Hotel"
-                        id="depature"
+                        label="Leaving on"
+                        :defaultValue="currentDate"
+                        id="leaving-date"
                         type="text"
-                        inputClass="ls-inp-field"
-                        divClass="input-white-wrapper medium-inp-wrapper"
-                    />
-                    <img src="../../assets/images/transfer-arrow.svg" alt="transfer-arrow" class="transfer-arrow">
-                    <InputField 
-                        label="To where?"
-                        placeholder="Terminal, Hotel"
-                        id="destination"
-                        type="text"
-                        inputClass="ls-inp-field"
-                        divClass="input-white-wrapper medium-inp-wrapper"
+                        inputClass="ls-inp-field datepicker"
+                        divClass="input-white-wrapper"
                     />
                 </div>
-                <InputField 
-                    label="Leaving on"
-                    :defaultValue="currentDate"
-                    id="leaving-date"
-                    type="text"
-                    inputClass="ls-inp-field datepicker"
-                    divClass="input-white-wrapper"
-                />
             </div>
         </div>
         <div class="tab-form-btn-wrapper">

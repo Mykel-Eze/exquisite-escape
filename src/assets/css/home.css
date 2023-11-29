@@ -1,7 +1,9 @@
 /*---=== Landing-Section Style ===---*/
 section#landing-section {
     min-height: 500px;
-    height: calc(100vh - 90px);
+}
+.container.glossy-bg-wrapper {
+    padding: 60px 0;
 }
 .glossy-bg {
     background-image: url(../images/translucent-bg.png);
@@ -17,8 +19,6 @@ section#landing-section {
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 .landing-section-title-desc {
     font-size: 18px;
@@ -64,6 +64,11 @@ button.tab-form-btn {
     justify-content: center;
     font-size: 18px;
     font-weight: 600;
+}
+button.tab-form-btn.tfb-2 {
+    border: 1px solid #FFF;
+    background-color: transparent;
+    margin-bottom: 10px;
 }
 button.tab-form-btn img {
     width: 18px;
@@ -141,14 +146,8 @@ img.transfer-arrow {
 }
 
 @media(max-width: 992px) {
-    section#landing-section {
-        height: auto;
-        padding: 70px 0;
-    }
     .glossy-bg {
         background-image: url(../images/translucent-bg-mobile.png);
-        top: auto;
-        transform: none;
     }
     .tab-buttons.flex-div {
         display: grid;
@@ -166,7 +165,7 @@ img.transfer-arrow {
     form.search-inputs .grid-sm-break {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 10px;
     }
     .input-white-wrapper, button.tab-form-btn, .tab-form-btn-wrapper {
         width: 100%;
@@ -196,9 +195,12 @@ img.transfer-arrow {
     .select-field-wrapper input.select-dropdown {
         width: 100% !important;
     }
+    form.search-inputs .grid-sm-break {
+        gap: 10px;
+    }
     form.search-inputs .grid-sm-break > .flex-div.gap-3 {
         flex-direction: column;
-        gap: 30px;
+        gap: 10px;
     }
     .input-white-wrapper {
         height: 75px;
