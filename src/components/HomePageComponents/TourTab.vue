@@ -57,12 +57,12 @@
         </div>
         <div class="tab-form-btn-wrapper">
             <div class="flex-div justify-center gap-[10px] text-[18px] mb-[20px]">
-                <img src="../../assets/images/best-check.svg" alt="best-check" class="best-check">
+                <img src="@/assets/images/best-check.svg" alt="best-check" class="best-check">
                 <span>Best Deal Guaranteed </span>
             </div>
             <button class="tab-form-btn flex-div gap-3">
                 <span>Search Tour</span>
-                <img src="../../assets/images/beach-icon.svg" alt="beach-icon">
+                <img src="@/assets/images/beach-icon.svg" alt="beach-icon">
             </button>
         </div>
     </form>

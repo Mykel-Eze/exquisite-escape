@@ -66,7 +66,7 @@
     <ul id="slide-out" class="sidenav">
         <div class="center sidenav-logo">
             <router-link to="/" class="sidenav-close" @click="scrollToTop()">
-                <img src="../assets/images/exquisite-escape-logo.png" alt="Exquisite Escape" class="logo">
+                <img src="../assets/images/exquisite-escape-logo.png" alt="Exquisite Escape" class="logo m-auto">
             </router-link>
         </div>
         <li>
@@ -88,7 +88,7 @@
             <router-link to="/#" class="sidenav-close" @click="scrollToTop()">Help</router-link>
         </li>
         <li class="hire-us-li hul-2">
-            <div class="flex-div gap-2">
+            <div class="flex-div gap-2 justify-center">
               <button class="menu-user-btn flex-div">
                   <img src="../assets/images/menu.svg" alt="menu" class="top-nav-menu">
                   <img src="../assets/images/no-user-pix.svg" alt="user" class="user-icon">

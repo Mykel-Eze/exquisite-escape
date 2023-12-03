@@ -42,7 +42,7 @@
                             divClass="input-white-wrapper"
                             v-model="depature"
                         />
-                        <img src="../../assets/images/transfer-arrow.svg" alt="transfer-arrow" class="transfer-arrow">
+                        <img src="@/assets/images/transfer-arrow.svg" alt="transfer-arrow" class="transfer-arrow">
                         <InputField 
                             label="To where?"
                             placeholder="City or Airport"
@@ -88,16 +88,16 @@
         </div>
         <div class="tab-form-btn-wrapper">
             <div class="flex-div justify-center gap-[10px] text-[18px] mb-[20px]">
-                <img src="../../assets/images/best-check.svg" alt="best-check" class="best-check">
+                <img src="@/assets/images/best-check.svg" alt="best-check" class="best-check">
                 <span>Best Deal Guaranteed </span>
             </div>
             <button v-if="tripType === 'multi-city'" class="tab-form-btn tfb-2 flex-div gap-3" type="button" @click="duplicateGridSmBreak">
                 <span>Add Flight</span>
-                <img src="../../assets/images/plus-rectangle.svg" alt="plus-icon">
+                <img src="@/assets/images/plus-rectangle.svg" alt="plus-icon">
             </button>
             <button class="tab-form-btn flex-div gap-3">
                 <span>Search Flights</span>
-                <img src="../../assets/images/plane-icon.svg" alt="plane-icon">
+                <img src="@/assets/images/plane-icon.svg" alt="plane-icon">
             </button>
         </div>
     </form>

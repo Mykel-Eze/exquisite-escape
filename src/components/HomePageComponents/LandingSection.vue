@@ -11,19 +11,19 @@
                         <div class="tab-buttons flex-div gap-[10px]">
                             <button @click="activeTab = 'flights'" class="flex-div gap-[10px]" :class="{ 'active': activeTab === 'flights' }">
                                 <span>Book Flights</span>
-                                <img src="../../assets/images/plane-icon.svg" alt="plane-icon">
+                                <img src="@/assets/images/plane-icon.svg" alt="plane-icon">
                             </button>
                             <button @click="activeTab = 'hotels'" class="flex-div gap-[10px]" :class="{ 'active': activeTab === 'hotels' }">
                                 <span>Find Hotels</span>
-                                <img src="../../assets/images/hotel-icon.svg" alt="hotel-icon">
+                                <img src="@/assets/images/hotel-icon.svg" alt="hotel-icon">
                             </button>
                             <button @click="activeTab = 'tours'" class="flex-div gap-[10px]" :class="{ 'active': activeTab === 'tours' }">
                                 <span>Go for Tour</span>
-                                <img src="../../assets/images/beach-icon.svg" alt="beach-icon">
+                                <img src="@/assets/images/beach-icon.svg" alt="beach-icon">
                             </button>
                             <button @click="activeTab = 'transfer'" class="flex-div gap-[10px]" :class="{ 'active': activeTab === 'transfer' }">
                                 <span>Request for Transfer</span>
-                                <img src="../../assets/images/car-icon.svg" alt="car-icon">
+                                <img src="@/assets/images/car-icon.svg" alt="car-icon">
                             </button>
                         </div>
 

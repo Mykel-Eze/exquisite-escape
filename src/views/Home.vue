@@ -19,6 +19,10 @@
     <!--=== Hotel-Flights-Lists Section ===-->
     <HotelFlightLists />
     <!--=== end of Hotel-Flights-Lists Section ===-->
+
+    <!--=== Partners-Block Section ===-->
+    <PartnersBlock />
+    <!--=== end of Partners-Block Section ===-->
   </div>
 </template>
 
@@ -28,6 +32,7 @@ import TripInspiration from '@/components/HomePageComponents/TripInspiration.vue
 import TrendingFlights from '@/components/HomePageComponents/TrendingFlights.vue'
 import BookNowExplore from '@/components/HomePageComponents/BookNowExplore.vue'
 import HotelFlightLists from '@/components/HomePageComponents/HotelFlightLists.vue'
+import PartnersBlock from '@/components/Partners.vue';
 
 export default {
   name: 'HomeView',
@@ -36,7 +41,8 @@ export default {
     TripInspiration,
     TrendingFlights,
     BookNowExplore,
-    HotelFlightLists, 
+    HotelFlightLists,
+    PartnersBlock, 
   },
 }
 </script>

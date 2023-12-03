@@ -8,7 +8,7 @@
                 <span>Book a transfer for your trip </span>
                 <router-link to="/#" class="flex-div gap-[10px]">
                   <span>Book now</span>
-                  <img src="../../assets/images/car-icon-2.svg" alt="car" class="bne-btn-icon">
+                  <img src="@/assets/images/car-icon-2.svg" alt="car" class="bne-btn-icon">
                 </router-link>
               </div>
             </div>
@@ -17,7 +17,7 @@
                 <span>Things to do on your trip</span>
                 <router-link to="/#" class="flex-div gap-[10px]">
                   <span>Explore Tour</span>
-                  <img src="../../assets/images/car-icon-2.svg" alt="car" class="bne-btn-icon">
+                  <img src="@/assets/images/car-icon-2.svg" alt="car" class="bne-btn-icon">
                 </router-link>
               </div>
             </div>

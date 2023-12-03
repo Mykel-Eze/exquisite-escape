@@ -76,3 +76,13 @@ form#newsletter-form button.submit-btn {
         margin-bottom: 20px;
     }
 }
+
+@media(max-width: 600px) {
+    form#newsletter-form {
+        flex-direction: column;
+    }
+    form#newsletter-form .submit-btn-wrapper, 
+    form#newsletter-form .submit-btn-wrapper > button {
+        width: 100%;
+    }
+}

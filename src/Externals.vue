@@ -4,7 +4,7 @@
         <div id="main-contents-wrapper">
           <router-view />
         </div>
-      <PartnersBlock />
+      
       <NewsletterBlock />
       <Footer />
     </div>
@@ -13,13 +13,12 @@
   <script>
   import Navbar from "@/components/Navbar.vue";
   import Footer from "@/components/Footer.vue";
-  import NewsletterBlock from './components/NewsletterBlock.vue';
-  import PartnersBlock from './components/Partners.vue';
+  import NewsletterBlock from '@/components/NewsletterBlock.vue';
   
   export default {
     name: "ExternalLayout",
     components: {
-      Navbar, Footer, NewsletterBlock, PartnersBlock
+      Navbar, Footer, NewsletterBlock
     }
   }
   </script>

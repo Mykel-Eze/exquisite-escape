@@ -1,0 +1,341 @@
+/*---=== Top-Section Style ===---*/
+.ts-container {
+    max-width: 684px;
+    margin: 100px auto;
+}
+h1.page-title {
+    font-size: 64px;
+    line-height: 77px;
+    color: #141414;
+}
+.search-help-wrapper {
+    max-width: 450px;
+    margin: 30px auto 0;
+    display: flex;
+    gap: 10px;
+}
+input#help-search {
+    box-sizing: border-box;
+    height: 59px;
+    background: var(--pry-color);
+    margin-bottom: 0;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+input#help-search::placeholder,
+input#help-search::-webkit-input-placeholder,
+input#help-search::-moz-placeholder,
+input#help-search::-ms-input-placeholder {
+    color: white;
+    opacity: 1;
+}
+button.search-help-btn {
+    border-radius: 8px;
+    border: 1px solid var(--pry-color);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 12px;
+    color: var(--pry-color);
+    height: 59px;
+}
+
+@media(max-width: 600px) {
+    h1.page-title {
+        font-size: 54px;
+        line-height: 61px;
+        text-align: center;
+    }
+    .search-help-wrapper {
+        flex-direction: column;
+    }
+}
+/*---=== end of Top-Section Style ===---*/
+
+/*---=== Help-Links-Section Style ===---*/
+section#help-link-section {
+    margin-bottom: 57px;
+}
+.help-links-wrapper {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #606161;
+    overflow: auto;
+    gap: 15px;
+}
+
+.help-links-wrapper a {
+    padding-bottom: 10px;
+    color: #606161;
+    text-wrap: nowrap;
+}
+.help-links-wrapper a:hover {
+    font-weight: bold;
+}
+
+.help-links-wrapper a.router-link-exact-active {
+    font-weight: bold;
+    border-bottom: 4px solid var(--pry-color);
+}
+/*---=== end of Help-Links-Section Style ===---*/
+
+/*---=== Discover-New-Places-Section Style ===---*/
+.dnps-wrapper {
+    border-radius: 20px;
+    background: #141414;
+    color: white;
+    padding: 26px 60px 30px;
+}
+.dnps-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -0.8px;
+    font-family: var(--font);
+}
+.dnps-title-desc {
+    color: #CCEDEB;
+    font-size: 18px;
+    line-height: 26px;
+}
+.dnps-buttons-side.flex-div {
+    gap: 30px;
+}
+button.dnps-btn.flex-div {
+    border-radius: 10px;
+    border: 1px solid var(--pry-color);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    height: 59px;
+    padding: 16px 28px;
+    background: transparent;
+    color: #CCEDEB;
+    font-size: 18px;
+    gap: 12px;
+    font-weight: bold;
+}
+
+@media(max-width: 992px) {
+    .dnps-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media(max-width: 600px) {
+    .dnps-wrapper {
+        padding: 30px 30px 40px;
+    }
+    .dnps-title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .dnps-buttons-side.flex-div {
+        flex-direction: column;
+    }
+    .dnps-buttons-side.flex-div > a, button.dnps-btn.flex-div {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/*---=== end of Discover-New-Places-Section Style ===---*/
+
+/*---=== Getting-Started-Section Style ===---*/
+section#getting-started-section {
+    margin: 100px 0;
+}
+.section-title-header {
+    margin-bottom: 34px;
+}
+.section-title {
+    color: #141414;
+    font-size: 32px;
+    margin: 0;
+    letter-spacing: -0.64px;
+    font-family: var(--font);
+}
+.section-title-link {
+    font-size: 18px;
+    color: var(--pry-color);
+}
+.gss-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.gss-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.gss-img-wrapper {
+    border-radius: 8px;
+    height: 183px;
+    overflow: hidden;
+}
+.gss-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.gss-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #606161;
+}
+
+@media(max-width: 992px) {
+    .gss-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+    .gss-wrapper {
+        grid-template-columns: 100%;
+    }
+    .section-title-header.flex-div.justify-between {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .section-title-link.flex-div {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+}
+/*---=== end of Getting-Started-Section Style ===---*/
+
+/*---=== Top-Articles-Section Style ===---*/
+section#top-articles-section {
+    margin: 100px 0;
+}
+.top-articles-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 54px;
+}
+.top-article-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #9D9D9D;
+    background: #F3F3F3;
+}
+.top-article-title {
+    font-size: 18px;
+    color: var(--pry-color);
+    text-decoration: underline;
+}
+.top-article-desc {
+    color: #606161;
+    font-size: 12px;
+}
+
+@media(max-width: 992px) {
+    .top-articles-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media(max-width: 600px) {
+    .top-articles-wrapper {
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+}
+/*---=== end of Top-Articles-Section Style ===---*/
+
+/*---=== Explore-More-Section Style ===---*/
+section#explore-more-section {
+    padding: 100px 0 90px;
+    background-color: #141414;
+    color: white;
+}
+.explore-more-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.explore-more-block {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #606161;
+}
+.explore-more-img-wrapper {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+.explore-more-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.explore-more-text-wrapper {
+    color: #F8F9FE;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.36px;
+}
+.explore-block-2-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.56px;
+}
+.explore-block-2-desc {
+    font-size: 16px;
+    margin-top: 3px;
+}
+button.explore-block-2-btn {
+    border-radius: 8px;
+    border: 1px solid #141414;
+    background: white;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    width: 100%;
+    height: 58px;
+    font-size: 18px;
+    color: #0A0A0A;
+    margin-top: 46px;
+}
+button.explore-block-2-btn:hover {
+    border: 1px solid white;
+    background: #141414;
+    color: white;
+}
+
+@media(max-width: 992px) {
+    .explore-more-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .explore-more-block-2 {
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 600px) {
+    .explore-more-wrapper {
+        grid-template-columns: 100%;
+    }
+}
+/*---=== end of Explore-More-Section Style ===---*/

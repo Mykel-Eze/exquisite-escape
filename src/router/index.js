@@ -4,7 +4,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Externals from '../Externals.vue'
 
 // Externl Views
-import Home from '../views/Home.vue'
+import Home from '@/views/Home.vue'
+import HelpCenter from '@/views/HelpCenter/Index.vue'
 
 const routes = [
   {
@@ -16,6 +17,12 @@ const routes = [
         alias: '',
         name: 'Home',
         component: Home
+      },
+      {
+        path: 'help-center',
+        alias: '',
+        name: 'HelpCenter',
+        component: HelpCenter
       },
     ]
   },

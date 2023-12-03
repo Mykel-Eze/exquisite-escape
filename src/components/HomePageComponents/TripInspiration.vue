@@ -13,7 +13,7 @@
                     </div>
                     <button class="customise-package-btn flex-div text-white pry-bg">
                         <span>Customise Package</span>
-                        <img src="../../assets/images/briefcase.svg" alt="briefcase-icon">
+                        <img src="@/assets/images/briefcase.svg" alt="briefcase-icon">
                     </button>
                 </div>
                 <div class="rel">
@@ -53,10 +53,10 @@
 
                     <!-- Custom navigation icons -->
                     <div class="custom-nav-icon custom-prev"> 
-                        <img src="../../assets/images/arrow-left.svg" alt="prev">
+                        <img src="@/assets/images/arrow-left.svg" alt="prev">
                     </div>
                     <div class="custom-nav-icon custom-next"> 
-                        <img src="../../assets/images/arrow-right.svg" alt="next">
+                        <img src="@/assets/images/arrow-right.svg" alt="next">
                     </div>
                 </div>
             </div>
