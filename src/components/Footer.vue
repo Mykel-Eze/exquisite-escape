@@ -7,7 +7,7 @@
                     <div class="footer-block-title">Support</div>
                     <ul class="footer-block-links">
                         <li>
-                            <router-link to="/#" class="footer-link">Help Center</router-link>
+                            <router-link to="/help-center" class="footer-link">Help Center</router-link>
                         </li>
                         <li>
                             <router-link to="/#" class="footer-link">Cancel your flight</router-link>
@@ -76,7 +76,7 @@
                     <div class="footer-block-title">Account</div>
                     <ul class="footer-block-links">
                         <li>
-                            <router-link to="/#" class="footer-link">My account</router-link>
+                            <router-link to="/auth" class="footer-link">My account</router-link>
                         </li>
                         <li>
                             <router-link to="/#" class="footer-link">Become an affliiate</router-link>

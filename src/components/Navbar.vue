@@ -41,7 +41,7 @@
                         </ul>
                     </li>
                     <li>
-                        <router-link to="/" class="" @click="scrollToTop()">Help</router-link>
+                        <router-link to="/help-center" class="" @click="scrollToTop()">Help</router-link>
                     </li>
                 </ul>
 
@@ -85,7 +85,7 @@
             <router-link to="/#" class="sidenav-close" @click="scrollToTop()">Company</router-link>
         </li>
         <li>
-            <router-link to="/#" class="sidenav-close" @click="scrollToTop()">Help</router-link>
+            <router-link to="/help-center" class="sidenav-close" @click="scrollToTop()">Help</router-link>
         </li>
         <li class="hire-us-li hul-2">
             <div class="flex-div gap-2 justify-center">
