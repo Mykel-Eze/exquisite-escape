@@ -7,7 +7,8 @@ import Auth from '@/layouts/Auth.vue'
 // External Views
 import Home from '@/views/Home.vue'
 import HelpCenter from '@/views/HelpCenter/Index.vue'
-import HelpTopics from '@/views/HelpCenter/HelpTopics.vue'
+import HelpTopics from '@/views/HelpCenter/HelpTopics/Index.vue'
+import SingleTopicsPage from '@/views/HelpCenter/HelpTopics/SingleTopicPage'
 
 // Auth Views
 import SignIn from '@/views/SignIn.vue'
@@ -19,18 +20,23 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'home',
+        name: 'Home',
         component: Home
       },
       {
         path: 'help',
-        name: 'help',
+        name: 'Help',
         component: HelpCenter
       },
       {
         path: '/help/topics',
-        name: 'topics',
+        name: 'Topics',
         component: HelpTopics
+      },
+      {
+        path: '/help/topics/topic-page',
+        name: 'SingleTopics',
+        component: SingleTopicsPage
       },
     ]
   },
