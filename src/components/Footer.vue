@@ -7,7 +7,7 @@
                     <div class="footer-block-title">Support</div>
                     <ul class="footer-block-links">
                         <li>
-                            <router-link to="/help-center" class="footer-link">Help Center</router-link>
+                            <router-link to="/help" class="footer-link">Help Center</router-link>
                         </li>
                         <li>
                             <router-link to="/#" class="footer-link">Cancel your flight</router-link>

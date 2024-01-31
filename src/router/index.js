@@ -4,9 +4,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Externals from '@/layouts/Externals.vue'
 import Auth from '@/layouts/Auth.vue'
 
-// Externl Views
+// External Views
 import Home from '@/views/Home.vue'
 import HelpCenter from '@/views/HelpCenter/Index.vue'
+import HelpTopics from '@/views/HelpCenter/HelpTopics.vue'
+
+// Auth Views
 import SignIn from '@/views/SignIn.vue'
 
 const routes = [
@@ -16,13 +19,18 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'Home',
+        name: 'home',
         component: Home
       },
       {
-        path: 'help-center',
-        name: 'HelpCenter',
+        path: 'help',
+        name: 'help',
         component: HelpCenter
+      },
+      {
+        path: '/help/topics',
+        name: 'topics',
+        component: HelpTopics
       },
     ]
   },

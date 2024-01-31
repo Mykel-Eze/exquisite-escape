@@ -24,12 +24,21 @@ input#help-search {
     text-align: center;
     font-size: 18px;
 }
-input#help-search::placeholder,
-input#help-search::-webkit-input-placeholder,
-input#help-search::-moz-placeholder,
+input#help-search::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+input#help-search::-webkit-input-placeholder {
+    color: white;
+    opacity: 0.5;
+}
+input#help-search::-moz-placeholder {
+    color: white;
+    opacity: 0.5;
+}
 input#help-search::-ms-input-placeholder {
     color: white;
-    opacity: 1;
+    opacity: 0.5;
 }
 button.search-help-btn {
     border-radius: 8px;
@@ -339,3 +348,78 @@ button.explore-block-2-btn:hover {
     }
 }
 /*---=== end of Explore-More-Section Style ===---*/
+
+/*-----======== HelpTopics Page ======------*/
+
+/*---=== Help-Topics-Section ===---*/
+div#help-topics-page {
+    padding: 80px 0;
+}
+section#help-topics-top-section h2.page-title {
+    margin: 50px 0 24px;
+}
+.page-title-desc {
+    font-size: 18px;
+}
+ul.breadcrumb {
+    display: flex;
+}
+ul.breadcrumb span {
+    padding: 0 5px;
+}
+.breadcrumb-item {
+    color: #606161;
+}
+.breadcrumb-item a {
+    font-size: 16px;
+    color: var(--pry-color);
+    text-decoration: underline;
+}
+.breadcrumb-item a.router-link-exact-active {
+    color: #606161;
+    text-decoration: none;
+}
+.breadcrumb-item:last-child span {
+    display: none;
+}
+
+@media(max-width: 992px) {}
+
+@media(max-width: 600px) {}
+/*---=== end of Help-Topics-Section ===---*/
+
+/*---=== Topics-Wrapper-Section ===---*/
+.topics-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
+    margin-top: 80px;
+}
+.topic-block-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-family: var(--font-light);
+}
+ul.topic-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+ul.topic-links-wrapper li a {
+    font-size: 15px;
+    color: var(--pry-color);
+    text-decoration: underline;
+}
+
+@media(max-width: 992px) {
+    .topics-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+    .topics-wrapper {
+        grid-template-columns: 100%;
+    }
+}
+/*---=== end of Topics-Wrapper-Section ===---*/

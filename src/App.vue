@@ -8,7 +8,7 @@
 <style src=".\assets\css\styles.css"></style>
 
 <style>
-  div#nav {
+  div#wrapper {
     float: left;
     width: 100%;
     overflow-x: hidden;
